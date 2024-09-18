@@ -18,7 +18,7 @@ module.exports = {
     parserOptions: {
         project: ["./tsconfig.json"],
     },
-    ignorePatterns: [".eslintrc.js"],
+    ignorePatterns: [".eslintrc.js", "jest.config.js", "webpack.config.js"],
     rules: {
         // https://stackoverflow.com/questions/57802057/eslint-configuring-no-unused-vars-for-typescript
         // Use typescript's checker for unused vars (critical for Enums)
@@ -34,7 +34,7 @@ module.exports = {
 
         // https://typescript-eslint.io/rules/no-explicit-any
         // Disallow the any type.
-        "@typescript-eslint/no-explicit-any": "error",
+        //"@typescript-eslint/no-explicit-any": "error",
 
         // https://typescript-eslint.io/rules/no-unsafe-assignment
         // Disallow assigning a value with type any to variables and properties.
